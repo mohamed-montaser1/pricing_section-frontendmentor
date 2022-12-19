@@ -16,7 +16,7 @@ $linear: to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%);
 
 body,
 html {
-  overflow-x: hidden !important;
+  // overflow-x: hidden !important;
 }
 
 body {
@@ -42,6 +42,7 @@ body {
 .container {
   text-align: center;
   width: 80%;
+  max-width: 95%;
   margin: 40px auto;
   z-index: 10000000000;
   position: relative;
@@ -96,7 +97,7 @@ body {
       align-items: center;
       flex-direction: column;
       width: 390px;
-      max-width: 340px;
+      width: 390px;
       height: 428px;
       position: relative;
 
@@ -180,5 +181,12 @@ body {
         cursor: pointer;
       }
     }
+  }
+}
+
+
+@media (max-width: 400px) {
+  .pricing-cards__container__card {
+    max-width: 100%;
   }
 }
